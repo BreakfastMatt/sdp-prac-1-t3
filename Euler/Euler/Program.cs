@@ -1,6 +1,15 @@
 ﻿using System;
 using System.Collections.Generic;
 
+/*
+ * Authors:
+ *   
+ * Mak
+ * Damon 
+ * Breakfast boi
+ * 
+*/
+
 namespace Euler
 {
     class Program
@@ -8,8 +17,11 @@ namespace Euler
         static void Main(string[] args)
         {
             Console.WriteLine("Hello World!");
+            MultiplesOf3and5();
             Console.WriteLine($"SumSquareDifference: {SumSquareDifference()}");
             EvenFibonacciNumbers();
+            Console.ReadLine();
+
         }
 
         static int SumSquareDifference()
@@ -44,6 +56,23 @@ namespace Euler
                     sum += current;
             }//while
             Console.WriteLine($"The sum of the even-valued fibonacci terms that do not exceed four million is: {sum}");
+
+        }
+
+        public static void MultiplesOf3and5()
+        {
+            int sum =0;
+            int current = 1;
+            while (current < 1000)
+            {
+                if(current%3 == 0 || current%5 == 0)
+                {
+                    sum = sum +current ; 
+                }
+                current++;
+            }
+
+            Console.WriteLine("The sum of multiples between 3 and 5 below 1000 is "+ Convert.ToString(sum) +"!");
         }
     }
 }
