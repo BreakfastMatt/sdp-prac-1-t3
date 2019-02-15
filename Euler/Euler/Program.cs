@@ -6,7 +6,7 @@ using System.Collections.Generic;
  *   
  * Mak
  * Damon 
- * Breakfast boi
+ * Breakfast matt
  * 
 */
 
@@ -72,7 +72,7 @@ namespace Euler
                 current++;
             }
 
-            Console.WriteLine("The sum of multiples between 3 and 5 below 1000 is "+ Convert.ToString(sum) +"!");
+            Console.WriteLine("The sum of multiples of 3 and 5 below 1000 is "+ Convert.ToString(sum) +"!");
         }
     }
 }
